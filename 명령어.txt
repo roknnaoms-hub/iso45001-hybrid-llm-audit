@@ -1,0 +1,25 @@
+#기본 명령어
+streamlit run app.py
+
+#특정포트 실행
+streamlit run app.py --server.port 8501
+
+#백엔드 디버깅 모드 실행
+streamlit run app.py --logger.level=info
+
+#.env 파일에 저장되어야함.
+OPENAI_API_KEY=sk-xxxx...
+OPENAI_MODEL=gpt-5
+
+$필요 패키지 설치
+pip install streamlit openai pandas python-dotenv
+
+#명령 실행후 터미널 출력예시
+Local URL: http://localhost:8501
+Network URL: http://<your-ip>:8501
+
+#터미널에서 OPENAI_API_KEY, OPENAI_MODEL, OPENAI_URL 확인 명령어
+echo $Env:OPENAI_API_KEY
+echo $Env:OPENAI_MODEL
+echo $Env:OPENAI_URL
+
